@@ -22,6 +22,7 @@
 #include <math.h>
 #include <string.h>
 #include <time.h>
+#include <wand/MagickWand.h>
 
 #define MIN_SWAP_RATIO .004
 #define MAX_SWAP_RATIO .005
@@ -372,8 +373,6 @@ bool jo_write_jpg(const char *filename, const void *data, int width, int height,
     fclose(fp);
     return true;
 }
-
-#include <wand/MagickWand.h>
 
 int main(int argc, char *argv[])
 {
