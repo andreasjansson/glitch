@@ -34,7 +34,6 @@ void glitch(void *array_void, size_t array_size, size_t item_length) {
     int length = array_size / item_length;
     int minswaps = MIN_SWAP_RATIO * length;
     int maxswaps = MAX_SWAP_RATIO * length;
-    printf("%d, %d\n", maxswaps, length);
 
     int swaps = minswaps;
     if(maxswaps - minswaps > 0)
